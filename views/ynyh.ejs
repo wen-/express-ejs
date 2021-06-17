@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>下载：</p>
+    <form action="/download/ynyh" enctype="multipart/form-data" method="POST">
+      <label>开始：<input type="text" name="start" /></label>
+      <label>至：<input type="text" name="end" /></label>
+      <input type="submit" value="提交" />
+    </form>
+    <span style="color:green;"><%= locals.msg %></span>
+    
+  </body>
+</html>
